@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: "Do Hyeon", sans-serif;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+.slick-arrow {
+    position: absolute;
+    width: 16px;
+    top: 50%;
+    height: 16px;
+    border: none;
+    text-indent: -9999px;
+    background-color: transparent;
+}
+
+.slick-dots {
+    position: absolute;
+    top: 750px;
+    left: 900px;
+}
+
+.slick-dots li {
+    float: left;
+
+}
+
+.slick-dots li button {
+    border: none;
+    width: 10px;
+    margin-left: 30px;
+    height: 10px;
+    text-indent: -9999px;
+    border-radius: 50%;
+    background-color: rgba(211, 211, 211, 0.54);
+}
+
+#header_all {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    height: 200px;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 200px;
+}
+
+.lan {
+    position: absolute;
+    width: 80px;
+    top: 0;
+    cursor: pointer;
+    height: 80px;
+    left: 200px;
+}
+
+.lan_drop {
+    color: #fff;
+    display: none;
+    top: 60px;
+    left: 210px;
+    background-color: rgba(211, 211, 211, 0.395);
+    text-align: center;
+    height: 100px;
+    line-height: 50px;
+    position: absolute;
+    width: 80px;
+}
+
+.show {
+    display: block;
+}
+
+.lan_drop>p {
+    width: 80px;
+    height: 40px;
+}
+
+#main_all {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.main_ment {
+    position: absolute;
+    color: #fff;
+    top: 200px;
+    margin-left: 100px;
+    padding: 50px;
+    background-color: yellowgreen;
+    font-size: 2.2rem;
+}
