@@ -52,7 +52,7 @@ a {
 
 .logo {
     position: absolute;
-    top: 0;
+    top: 5px;
     left: 10px;
     width: 200px;
 }
@@ -60,17 +60,17 @@ a {
 .lan {
     position: absolute;
     width: 80px;
-    top: 0;
+    top: 5px;
     cursor: pointer;
     height: 80px;
-    left: 200px;
+    left: 220px;
 }
 
 .lan_drop {
     color: #fff;
     display: none;
     top: 60px;
-    left: 210px;
+    left: 220px;
     background-color: rgba(211, 211, 211, 0.395);
     text-align: center;
     height: 100px;
@@ -79,13 +79,31 @@ a {
     width: 80px;
 }
 
-.show {
-    display: block;
-}
+
 
 .lan_drop>p {
     width: 80px;
     height: 40px;
+}
+
+.header_menu {
+    position: absolute;
+    display: flex;
+    top: 30px;
+    line-height: 40px;
+    left: 410px;
+    color: #fff;
+    font-size: 1.6rem;
+    height: 40px;
+    text-align: center;
+}
+.header_menu>li {
+    width: 180PX;
+}
+.header_icons{
+    position: absolute;
+    right: 40px;
+    top: 8px;
 }
 
 #main_all {
@@ -98,9 +116,8 @@ a {
 .main_ment {
     position: absolute;
     color: #fff;
-    top: 200px;
-    margin-left: 100px;
-    padding: 50px;
-    background-color: yellowgreen;
-    font-size: 2.2rem;
+    top: 280px;
+    margin-left: 150px;
+    line-height: 80px;
+    font-size: 3rem;
 }
