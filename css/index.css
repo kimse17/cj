@@ -44,10 +44,11 @@ a {
 }
 
 #header_all {
-    position: relative;
+    position:absolute;
     width: 100%;
     z-index: 10;
     height: 200px;
+    top: 0;
 }
 
 .logo {
@@ -107,12 +108,17 @@ a {
 }
 
 #main_all {
-    position: absolute;
+    position:relative;
     top: 0;
+    height: 800px;
     width: 100%;
     overflow: hidden;
 }
-
+.single-item{
+    position: relative;
+    height: 800px;
+    width: 100%;
+}
 .main_ment {
     position: absolute;
     color: #fff;
@@ -120,4 +126,12 @@ a {
     margin-left: 150px;
     line-height: 80px;
     font-size: 3rem;
+}
+
+#mini_banner{
+    position: relative;
+    width: 100%;
+    height: 130px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.925);
 }
