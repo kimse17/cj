@@ -64,6 +64,23 @@
             <li>NEWSROOM</li>
             <li>SUPPORT</li>
         </ul>
+        <ul class="header_drop_menu">
+            <li>제일제당 소개&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;> </li>
+            <li>사업소개</li>
+            <li>글로벌 현황</li>
+            <li>CJ블로썸파크</li>
+            <li>CJ블로썸캠퍼스</li>
+            <li>CJ더키친</li>
+            <li>CJ THE MARKET</li>
+        </ul>
+        <!-- <ul class="header_drop_menu">
+            <li>ABOUT US</li>
+            <li>BRANDS</li>
+            <li>SUSTAINABILITY</li>
+            <li>INVESTORS</li>
+            <li>NEWSROOM</li>
+            <li>SUPPORT</li>
+        </ul> -->
         <div class="header_icons">
             <img src="./img/top_cjbio_dark.png" width="110px" alt="">
             <img src="./img/top_login_dark.png" width="45px" alt="">
@@ -97,7 +114,7 @@
     </section>
 
     <section id="main_all">
-        <div class="main_01" data-aos="fade-up" data-aos-duration="1500">
+        <div class="main_01" data-aos="fade-up" data-aos-duration="2000">
             <h2 style="color: red;">
                 ABOUT
             </h2>
@@ -220,6 +237,14 @@
             }
         });
         AOS.init();
+
+        document.querySelectorAll('.header_menu>li')[0].addEventListener('mouseover', function(){
+            document.querySelector('.header_drop_menu').style.display ='block'
+        }) 
+        // 마우스 오버시 나타남
+        document.querySelectorAll('.header_menu>li')[0].addEventListener('mouseout', function(){
+            document.querySelector('.header_drop_menu').style.display ='none'
+        }) 
     </script>
 
 </body>
