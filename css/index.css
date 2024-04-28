@@ -104,6 +104,46 @@ li {
 .header_menu>li {
     width: 180PX;
 }
+.header_drop_menu::before{
+    display: block;
+    width: 10px;
+    height: 10px;
+    top: -5px;
+    left: 100px;
+    margin-bottom: -8px;
+    transform: rotate(45deg);
+    position: absolute;
+    content: "";
+    border-left:solid 2px red;
+    border-top:solid 2px red;
+    background-color: rgb(255, 255, 255);
+}
+.header_drop_menu::after {
+    position: absolute;
+    content: "";
+    top: 0px;
+    width: 200px;
+    height: 2px;
+    left: 0px;
+    background-color: red;
+}
+
+.header_drop_menu {
+    padding: 15px;
+    display: none;
+    position: absolute;
+    width:200px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    top: 70px;
+    text-align: left;
+    left: 380px;
+}
+
+.header_drop_menu>li {
+    height: 40px;
+    line-height: 40px;
+}
 
 .header_icons {
     position: absolute;
@@ -242,6 +282,7 @@ li {
 }
 
 .main_02:hover {
+    animation: graph step-start;
     cursor: pointer;
     background-color: red;
 }
