@@ -1,10 +1,9 @@
-
-
+AOS.init();
 $('.single-item').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     dots: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 1300,
     autoplay: true,
 });
 
@@ -43,7 +42,6 @@ document.querySelector('.lan').addEventListener('click', function () {
         lan_drop.style.display = 'none';
     }
 });
-AOS.init();
 
 document.querySelectorAll('.header_menu>li')[0].addEventListener('mouseover', function () {
     document.querySelector('.header_drop_menu').style.display = 'block'
