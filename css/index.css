@@ -866,7 +866,6 @@ li {
 }
 
 .arrow {
-    /* position: absolute; */
     position: fixed;
     bottom: 5px;
     z-index: 999;
@@ -875,5 +874,4 @@ li {
     cursor: pointer;
     height: 75px;
     background-color: red;
-
 }
