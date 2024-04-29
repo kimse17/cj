@@ -221,12 +221,20 @@
             <span>INNOVATION</span>
             <P>혁신적인 연구 기술로 새로움을 창조하고<br>더 나은 삶을 만들어 갑니다.</P>
         </div>
-        <div class="inno_section">
-
-            <div class="your-class">
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
+        <div class="inno_section center">
+            <div>
+                <img src="./img/1547532754543_0.jpg" width="1350px" height="900px" alt="">
+                <div class="inno_ment">
+                    <span>CJ블로썸파크</span>
+                    <P>융합 크리에이티브가<br>피어나는<br>글로벌 통합 연구소</P>
+                </div>
+            </div>
+            <div class="inno_section_ment_02">
+                <img src="./img/1547792998067_0.jpg" width="1350px" height="900px" alt="">
+                <div  class="inno_ment">
+                    <span>CJ블로썸캠퍼스</span>
+                    <P>세계적인 기술력과<br>제조시설을 갖춘<br>미래형 스마트 팩토리</P>
+                </div>
             </div>
         </div>
     </section>
@@ -254,8 +262,6 @@
             <P>CJ제일제당은 다양한 채널을 통해<br>고객님의 소중한 의견을 듣고 있습니다.</P>
         </div>
     </section>
-
-
     <section id="footer_02">
         <div class="footer_02_00">
             <ul class="footer_02_01">
@@ -329,6 +335,33 @@
             dots: true,
             autoplaySpeed: 1500,
             autoplay: true,
+        });
+
+
+
+        $('.center').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 1,
+            responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
         });
 
         document.querySelector('.lan').addEventListener('click', function () {
