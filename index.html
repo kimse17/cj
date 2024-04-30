@@ -226,16 +226,16 @@
             <span>INNOVATION</span>
             <P>혁신적인 연구 기술로 새로움을 창조하고<br>더 나은 삶을 만들어 갑니다.</P>
         </div>
-        <div class="inno_section center">
-            <div>
-                <img src="./img/1547532754543_0.jpg" width="100%" alt="">
+        <div class="inno_section">
+            <div class="center_img">
+                <img src="./img/1547532754543_0.jpg" alt="">
                 <div class="inno_ment">
                     <span>CJ블로썸파크</span>
                     <P>융합 크리에이티브가<br>피어나는<br>글로벌 통합 연구소</P>
                 </div>
             </div>
-            <div>
-                <img src="./img/1547792998067_0.jpg" width="100%" alt="">
+            <div class="center_img_01">
+                <img src="./img/1547792998067_0.jpg" alt="">
                 <div class="inno_ment">
                     <span>CJ블로썸캠퍼스</span>
                     <P>세계적인 기술력과<br>제조시설을 갖춘<br>미래형 스마트 팩토리</P>
@@ -254,50 +254,51 @@
         <div>
             <img src="./img/ico_footer_02.png" alt="">
             <h4>NOTICE</h4>
-            <P>CJ제일제당은 다양한 채널을 통해<br>고객님의 소중한 의견을 듣고 있습니다.</P>
+            <P>CJ제일제당에 대해 많은 분들이<br>
+                궁금해 하시는 내용입니다</P>
         </div>
         <div>
             <img src="./img/ico_footer_03.png" alt="">
             <h4>NOTICE</h4>
-            <P>CJ제일제당은 다양한 채널을 통해<br>고객님의 소중한 의견을 듣고 있습니다.</P>
+            <P>CJ제일제당의 신제품을<br> 가장 먼저 만나보세요</P>
         </div>
         <div>
             <img src="./img/ico_footer_04.png" alt="">
             <h4>NOTICE</h4>
-            <P>CJ제일제당은 다양한 채널을 통해<br>고객님의 소중한 의견을 듣고 있습니다.</P>
+            <P>CJ그룹 인재채용</P>
         </div>
     </section>
     <section id="footer_02">
         <div class="footer_02_00">
             <ul class="footer_02_01">
-                <li style="color: red; width: 120px;">개인정보처리방침</li>
-                <li style="width: 100px;">지속가능경영</li>
-                <li style="width: 80px;">이용약관</li>
-                <li style="width: 80px;">법적고지</li>
-                <li style="width: 90px;">온라인제보</li>
+                <li>개인정보처리방침</li>
+                <li>지속가능경영</li>
+                <li>이용약관</li>
+                <li>법적고지</li>
+                <li>온라인제보</li>
                 <li>오시는길</li>
             </ul>
 
-            <ul class="footer_02_01">
-                <li style="width: 200px;">영상정보처리기기운용관리방침</li>
-                <li style="width: 80px;">인재채용</li>
-                <li style="width: 80px;">상생경영</li>
-                <li style="width: 100px;">고객행복센터</li>
-                <li style="width: 90px;">대리점모집</li>
-                <li style="width: 90px;">위탁점모집</li>
-                <li style="width: 80px;">사이트맵</li>
-                <li style="width:100px;">CJ도너스캠프</li>
-                <li style="width: 180px;">CJ THE MARKET</li>
+            <ul class="footer_02_03">
+                <li>영상정보처리기기운용관리방침</li>
+                <li>인재채용</li>
+                <li>상생경영</li>
+                <li>고객행복센터</li>
+                <li>대리점모집</li>
+                <li>위탁점모집</li>
+                <li>사이트맵</li>
+                <li>CJ도너스캠프</li>
+                <li>CJ THE MARKET</li>
             </ul>
         </div>
         <div class="footer_02_02">
-            <span style="width: 150px;">씨제이제일제당(주)</span>
-            <span>서울특별시 중구 동호로 330 CJ 제일제당센터 &nbsp; &nbsp;(우)04560 대표자 손경식, 강신호</span>
+            <span style="width: 120px;">씨제이제일제당(주)</span>
+            <span>서울특별시 중구 동호로 330 CJ 제일제당센터 &nbsp;(우)04560 대표자 손경식, 강신호</span>
         </div>
         <div class="footer_02_02">
-            <span style="width: 200px;">대표전화 02-6740-1114</span>
-            <span style="width: 250px;">사업자등록번호 104-86-09535</span>
-            <span style="width: 300px;">사업자등록번호 개인정보보호책임자 류화정</span>
+            <span style="width: 160px;">대표전화 02-6740-1114</span>
+            <span style="width: 200px;">사업자등록번호 104-86-09535</span>
+            <span style="width: 260px;">사업자등록번호 개인정보보호책임자 류화정</span>
             <span>고객행복센터 080-850-1200</span>
         </div>
         <span>©2019 CJ CHEILJEDANG CORP. ALL RIGHTS RESERVED</span>
@@ -319,6 +320,40 @@
             <a href="#"><img src="./img/arrow.png" alt=""></a>
         </div>
     </section>
+    <script>
+        $(document).ready(function () {
+            var startX, endX, currentIndex = 0;
+            var $innoSection = $('.inno_section');
+
+            $innoSection.on('touchstart', function (e) {
+                startX = e.originalEvent.touches[0].clientX;
+            });
+
+            $innoSection.on('touchmove', function (e) {
+                endX = e.originalEvent.touches[0].clientX;
+            });
+
+            $innoSection.on('touchend', function (e) {
+                if (startX - endX > 50) {
+                    if (currentIndex < $innoSection.children('.center_img').length - 1) {
+                        currentIndex++;
+                        moveSlide();
+                    }
+                } else if (endX - startX > 50) {
+                    if (currentIndex > 0) {
+                        currentIndex--;
+                        moveSlide();
+                    }
+                }
+            });
+
+            function moveSlide() {
+                var slideWidth = $innoSection.children('.center_img').eq(0).outerWidth();
+                var moveX = -currentIndex * slideWidth;
+                $innoSection.css('transform', 'translateX(' + moveX + 'px)');
+            }
+        });
+    </script>
 </body>
 
 </html>
