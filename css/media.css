@@ -148,7 +148,7 @@
     }
 
     #zoom_img>div>img {
-        width: 800px;
+        width: 750px;
         height: 700px;
     }
 
@@ -182,7 +182,7 @@
     }
 
     #brand_all .brand_title {
-        height: 250px;
+        height: 220px;
     }
 
     #brand_all .brand_title>span {
@@ -192,8 +192,8 @@
 
     #brand_all .brand_title>p {
         height: 200px;
-        line-height: 60px;
-        font-size: 2rem;
+        line-height: 40px;
+        font-size: 1.5rem;
     }
 
     .brand_section {
@@ -208,7 +208,9 @@
         height: 80px;
         line-height: 80px;
     }
-
+    .brand_section_title>p{
+        font-size: 1.2rem;
+    }
     .brand_section_title::after {
         position: absolute;
         content: "";
@@ -261,5 +263,61 @@
         width: 130px;
         left: 370px;
         top: 40px;
+    }
+    #inno_all {
+        height: 1200px;
+    }
+    
+    #inno_all .inno_title {
+        text-align: center;
+        height: 300px;
+        padding: 50px;
+    }
+    
+    #inno_all .inno_title>span {
+        display: block;
+        height: 80px;
+        line-height: 80px;
+        color: red;
+        font-size: 3rem;
+    }
+    
+    
+    #inno_all .inno_title>p {
+        height: 100px;
+        line-height: 40px;
+        font-size: 1.5rem;
+        color: #444444;
+    }
+    .center {
+        right: 20px;
+        background-color: #333;
+        height: 700px;
+    }
+    .center::after{
+        position: absolute;
+        content: "";
+        border-radius: 5px;
+        width: 1440px;
+        height: 5px;
+        top: -30px;
+        left: 60px;
+        background-color:  #d4d4d4;
+    }
+    .center::before{
+        position: absolute;
+        content: "";
+        border-radius: 5px;
+        width: 1350px;
+        height: 5px;
+        top: -30px;
+        z-index: 9;
+        left:61px;
+        background-color:  #ff0000;
+    }
+    .center>div{
+        position: relative;
+        width: 1500px;
+        height: 700px;
     }
 }
