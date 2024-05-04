@@ -320,40 +320,7 @@
             <a href="#"><img src="./img/arrow.png" alt=""></a>
         </div>
     </section>
-    <script>
-        $(document).ready(function () {
-            var startX, endX, currentIndex = 0;
-            var $innoSection = $('.inno_section');
-
-            $innoSection.on('touchstart', function (e) {
-                startX = e.originalEvent.touches[0].clientX;
-            });
-
-            $innoSection.on('touchmove', function (e) {
-                endX = e.originalEvent.touches[0].clientX;
-            });
-
-            $innoSection.on('touchend', function (e) {
-                if (startX - endX > 50) {
-                    if (currentIndex < $innoSection.children('.center_img').length - 1) {
-                        currentIndex++;
-                        moveSlide();
-                    }
-                } else if (endX - startX > 50) {
-                    if (currentIndex > 0) {
-                        currentIndex--;
-                        moveSlide();
-                    }
-                }
-            });
-
-            function moveSlide() {
-                var slideWidth = $innoSection.children('.center_img').eq(0).outerWidth();
-                var moveX = -currentIndex * slideWidth;
-                $innoSection.css('transform', 'translateX(' + moveX + 'px)');
-            }
-        });
-    </script>
+   
 </body>
 
 </html>
