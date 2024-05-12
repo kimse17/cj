@@ -82,12 +82,9 @@ const imgSections = document.querySelectorAll('div[class^="brand_section_img"]')
 // 각 타이틀에 대한 이벤트 리스너를 추가합니다.
 titles.forEach((title, index) => {
     title.addEventListener('click', function () {
-        // 모든 이미지 섹션을 숨깁니다.
         imgSections.forEach(section => {
             section.style.display = 'none';
         });
-
-        // 클릭된 타이틀에 해당하는 이미지 섹션만 표시합니다.
         imgSections[index].style.display = 'block';
     });
 });
