@@ -7,8 +7,6 @@ $('.single-item').slick({
     autoplay: true,
 });
 
-
-
 $('.center').slick({
     centerMode: true,
     centerPadding: '60px',
@@ -75,11 +73,9 @@ document.querySelectorAll('.header_menu>li')[3].addEventListener('mouseout', fun
 
 
 
-// 요소들을 선택합니다.
+
 const titles = document.querySelectorAll('.brand_section_title > p');
 const imgSections = document.querySelectorAll('div[class^="brand_section_img"]');
-
-// 각 타이틀에 대한 이벤트 리스너를 추가합니다.
 titles.forEach((title, index) => {
     title.addEventListener('click', function () {
         imgSections.forEach(section => {
